@@ -1,5 +1,9 @@
-[![npm version](https://badge.fury.io/js/barcode-scanner-status.svg)](https://www.npmjs.com/package/barcode-scanner-status)
+[![](https://img.shields.io/badge/npm%20package-1.0.11-brightgreen)](https://www.npmjs.com/package/barcode-scanner-status)
+
 [![MIT license](http://img.shields.io/badge/license-MIT-brightgreen.svg)](http://opensource.org/licenses/MIT)
+
+
+
 
 # Barcode Scanner Status
 Detect if a `Barcode Scanner` (or external keyboard) is connected to iOS device
