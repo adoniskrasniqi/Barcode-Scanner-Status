@@ -2,13 +2,13 @@
 	"author": {
 		"name": "Adonis Krasniqi"
 	},
-	"description": "Detect if a Barcode Scanner is connected to iOS device",
+	"description": "Detect if a Barcode Scanner (or external keyboard) is connected to iOS device",
 	"keywords": [
 		"barcode",
 		"scanner",
 		"detect"
 	],
 	"license": "MIT",
-	"name": "barcode-detector",
-	"version": "0.0.1"
+	"name": "barcode-scanner-status",
+	"version": "0.0.2"
 }
