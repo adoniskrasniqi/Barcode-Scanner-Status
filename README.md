@@ -1,5 +1,4 @@
 [![](https://img.shields.io/badge/npm%20package-1.0.11-brightgreen)](https://www.npmjs.com/package/barcode-scanner-status)
-
 [![MIT license](http://img.shields.io/badge/license-MIT-brightgreen.svg)](http://opensource.org/licenses/MIT)
 
 
