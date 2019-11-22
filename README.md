@@ -1,4 +1,4 @@
-[![](https://img.shields.io/badge/npm%20package-1.0.11-brightgreen)](https://www.npmjs.com/package/barcode-scanner-status)
+[![](https://img.shields.io/badge/npm%20package-1.1.1-brightgreen)](https://www.npmjs.com/package/barcode-scanner-status)
 [![MIT license](http://img.shields.io/badge/license-MIT-brightgreen.svg)](http://opensource.org/licenses/MIT)
 
 
@@ -29,4 +29,10 @@ Returns scanner status after delay, which by default is 5ms.
 brcScannerStatus.checkForScanner().then((scannerConnected) => {
 	console.log(scannerConnected);
 });
+```
+#### destroy()
+Destroy eventListener for scanner status
+
+```
+brcScannerStatus.destroy();
 ```
