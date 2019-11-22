@@ -25,12 +25,15 @@ export default {
 
 	watchForKeyboard() {
 		let self = this;
-		addEventListener("keyboardWillShow", () => {
-			self.keyboardShown = true;
-		});
-		addEventListener("keyboardWillHide", () => {
-			self.keyboardShown = false;
-		});
+		window.addEventListener("keyboardWillShow", this.setKeyboardShownTrue);
+		window.addEventListener("keyboardWillHide", this.setKeyboardShownFalse);
+	},
+
+	setKeyboardShownTrue() {
+		this.keyboardShown = true;
+	},
+	setKeyboardShownFalse() {
+		this.keyboardShown = false;
 	},
 
 	detectScanner() {
@@ -45,5 +48,16 @@ export default {
 		} catch (e) {
 			console.log(e);
 		}
+	},
+
+	destroy() {
+		window.removeEventListener(
+			"keyboardWillShow",
+			this.setKeyboardShownTrue
+		);
+		window.removeEventListener(
+			"keyboardWillHide",
+			this.setKeyboardShownFalse
+		);
 	}
 };
