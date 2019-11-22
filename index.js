@@ -51,6 +51,7 @@ export default {
 	},
 
 	destroy() {
+		this.destroyElement();
 		window.removeEventListener(
 			"keyboardWillShow",
 			this.setKeyboardShownTrue
